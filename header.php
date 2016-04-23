@@ -1,13 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html <?php language_attributes(); ?>>
 
 <head>
 
-    <meta charset="utf-8">
+    <meta charset="<?php bloginfo( 'charset' ); ?>">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1">
     <meta name="description" content="">
-    <meta name="author" content="Luke">
+    <link rel="profile" href="http://gmpg.org/xfn/11">
+	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 
     <title>Writer</title>
 
@@ -25,8 +26,8 @@
     
     <!-- Bootstrap Core CSS -->
     <link href="<?php bloginfo( 'stylesheet_directory' ); ?>/assets/css/bootstrap.min.css" rel="stylesheet">
-    <link href="<?php bloginfo( 'stylesheet_directory' ); ?>/assets/css/animate.css" rel="stylesheet">
-    <link href="<?php bloginfo( 'stylesheet_directory' ); ?>/style.css" rel="stylesheet">
+    <!--  -->
+    <!-- <link href="<?php bloginfo( 'stylesheet_directory' ); ?>/style.css" rel="stylesheet"> -->
 
     <!-- Custom CSS -->
    
@@ -36,7 +37,7 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-
+	<?php wp_head(); ?>
 </head>
 
 <body>
